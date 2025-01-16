@@ -1,0 +1,159 @@
+﻿@model OCCU_Project.Models.DataContentList
+<script>
+    $(document).ready(function () {
+             $("button[id*='btn-page']").click(function () {
+                $.ajax({
+                    context: this,
+                    url: '@Url.Action("GetListSearch")',
+                    data: { name: document.getElementById("inp-search").value, page: this.value },
+                    success: function (data) {
+                        $("#dataGrid").html(data);
+                        $("button[id*='btn-page']").removeClass("btn-primary");
+                        $("button[id*='btn-page']").addClass("btn-outline-primary");
+                        $("#btn-page-" + this.value).addClass("btn-primary");
+                        $("#btn-page-" + this.value).removeClass("btn-outline-primary");
+                    }
+                });
+            });
+
+             $("button[id='btn-edit']").click(function () {
+               $("#" + this.value + " input").removeAttr("disabled");
+               $("#" + this.value + " input").removeClass("border-0");
+               $("#" + this.value + " #editContainer").removeClass("d-none");
+               $("#" + this.value + " #actionContainer").addClass("d-none");
+            });
+
+            $("button[id='btn-edit-cancel']").click(function () {
+               $("#" + this.value + " input").attr("disabled", "");
+               $("#" + this.value + " input").addClass("border-0");
+               $("#" + this.value + " #editContainer").addClass("d-none");
+               $("#" + this.value + " #actionContainer").removeClass("d-none");
+               $("#" + this.value + " input").each(function(index){
+                   this.value = this.dataset.oldvalue;
+               });
+            });
+
+            $("button[id='btn-edit-save']").click(function () {
+                var operations = [];
+                 $("#" + this.value + " input").each(function(index){
+                     if(this.value.trim() != this.dataset.oldvalue){
+                         operations.push( {"op" : "replace", "path": "/" + this.id.toLowerCase(), "value" : this.value  } );
+                     }
+                    }
+                  );
+
+                var patch = {
+                    "recordHash" : this.value,
+                    "operations": operations
+                };
+
+               $.ajax({
+                    context: this,
+                    url: '@Url.Action("Edit")' + "/" +  $("#" + this.value + " #Name").text().trim(),
+                    method: "PATCH",
+                    data: JSON.stringify(patch),
+                    contentType: 'application/json-patch+json',
+                    processData: false,
+                    success: function (data) {
+                        $.ajax({
+                             context: this,
+                             url: '@Url.Action("GetListSearch")',
+                             data: { name: document.getElementById("inp-search").value, page: $(".btn-primary").attr("value") },
+                             success: function (data) {
+                                 let page = $(".btn-primary").attr("value");
+                                 $("#dataGrid").html(data);
+                                 $("button[id*='btn-page']").removeClass("btn-primary");
+                                 $("button[id*='btn-page']").addClass("btn-outline-primary");
+                                 $("#btn-page-" + page).addClass("btn-primary");
+                                 $("#btn-page-" + page).removeClass("btn-outline-primary");
+                            }
+                        });
+                    }
+                });
+            });
+
+            $("button[id='btn-delete']").click(function () {
+              $.ajax({
+                    context: this,
+                    url: '@Url.Action("Delete")' + "/" +  $("#" + this.value + " #Name").text().trim(),
+                    method: "DELETE",
+                    success: function (data) {
+                        $.ajax({
+                             context: this,
+                             url: '@Url.Action("GetListSearch")',
+                             data: { name: document.getElementById("inp-search").value, page: $(".btn-primary").attr("value") },
+                             success: function (data) {
+                                 let page = $(".btn-primary").attr("value");
+                                 $("#dataGrid").html(data);
+                                 $("button[id*='btn-page']").removeClass("btn-primary");
+                                 $("button[id*='btn-page']").addClass("btn-outline-primary");
+                                 $("#btn-page-" + page).addClass("btn-primary");
+                                 $("#btn-page-" + page).removeClass("btn-outline-primary");
+                            }
+                        });
+                    }
+                });
+            });
+
+        });
+</script>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataContent.First().Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataContent.First().Field1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataContent.First().Field2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataContent.First().Field3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataContent.First().LastUpdateDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.DataContent)
+        {
+            <tr id="@item.RecordHash">
+                <td id="Name">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <input id="Field1" type="text" value="@Html.DisplayFor(modelItem => item.Field1)" data-oldValue="@Html.DisplayFor(modelItem => item.Field1)" disabled class="border-0 text-black w-auto" />
+                </td>
+                <td>
+                    <input id="Field2" type="text" value="@Html.DisplayFor(modelItem => item.Field2)" data-oldValue="@Html.DisplayFor(modelItem => item.Field2)" disabled class="border-0 text-black w-auto" />
+                </td>
+                <td>
+                    <input id="Field3" type="text" value="@Html.DisplayFor(modelItem => item.Field3)" data-oldValue="@Html.DisplayFor(modelItem => item.Field3)" disabled class="border-0 text-black w-auto" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdateDate)
+                </td>
+                <td>
+                    <div id="editContainer" class="d-none w-auto">
+                        <button id="btn-edit-cancel" type="button" class="btn btn-outline-primary btn-sm" value="@item.RecordHash" >Cancel</button>
+                        <button id="btn-edit-save" type="button" class="btn btn-outline-primary btn-sm" value="@item.RecordHash" >Save</button>
+                    </div>
+                    <div id="actionContainer" class="">
+                        <button id="btn-edit" type="button" class="btn btn-outline-primary btn-sm" value="@item.RecordHash">Edit</button>
+                        <button id="btn-delete" type="button" class="btn btn-outline-primary btn-sm" value="@item.RecordHash" >Delete</button>
+                    </div>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div style="display:inline-block">
+    @for(int i = 1; i <= Model.Pages; i++){
+        <button id="btn-page-@i" type="button" class="btn @(i == 1 ? "btn-primary" : "btn-outline-primary") btn-sm" value="@i">@i</button>
+    }
+</div>

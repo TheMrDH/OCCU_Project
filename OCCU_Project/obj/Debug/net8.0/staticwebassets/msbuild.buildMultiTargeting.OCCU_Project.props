@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OCCU_Project.props" />
+</Project>

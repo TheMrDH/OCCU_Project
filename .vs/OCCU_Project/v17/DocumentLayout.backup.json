@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\views\\datacontent\\components\\getlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\views\\datacontent\\components\\getlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\views\\datacontent\\datacontentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\views\\datacontent\\datacontentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\views\\status\\getlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\views\\status\\getlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\views\\datacontent\\components\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\views\\datacontent\\components\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\controllers\\datacontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\controllers\\datacontentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\dataproviders\\idatacontentdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\dataproviders\\idatacontentdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\dataproviders\\datacontentdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\dataproviders\\datacontentdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\helpers\\hashedjsonpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\helpers\\hashedjsonpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\models\\datacontentobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\models\\datacontentobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\dataproviders\\istatusdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\dataproviders\\istatusdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|c:\\users\\elteeb\\source\\repos\\occu_project\\occu_project\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4921499A-6728-45FD-8D4B-94175B1AA0A1}|OCCU_Project\\OCCU_Project.csproj|solutionrelative:occu_project\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\appsettings.json",
+              "RelativeDocumentMoniker": "OCCU_Project\\appsettings.json",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\appsettings.json",
+              "RelativeToolTip": "OCCU_Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T01:02:38.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "OCCU_Project\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Properties\\launchSettings.json",
+              "RelativeToolTip": "OCCU_Project\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T01:02:19.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\Components\\Create.cshtml",
+              "RelativeDocumentMoniker": "OCCU_Project\\Views\\DataContent\\Components\\Create.cshtml",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\Components\\Create.cshtml",
+              "RelativeToolTip": "OCCU_Project\\Views\\DataContent\\Components\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T00:03:28.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HashedJsonPatch.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Helpers\\HashedJsonPatch.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Helpers\\HashedJsonPatch.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Helpers\\HashedJsonPatch.cs",
+              "RelativeToolTip": "OCCU_Project\\Helpers\\HashedJsonPatch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:27:34.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetList.cshtml",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\Components\\GetList.cshtml",
+              "RelativeDocumentMoniker": "OCCU_Project\\Views\\DataContent\\Components\\GetList.cshtml",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\Components\\GetList.cshtml",
+              "RelativeToolTip": "OCCU_Project\\Views\\DataContent\\Components\\GetList.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJwAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T02:14:39.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataContentView.cshtml",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\DataContentView.cshtml",
+              "RelativeDocumentMoniker": "OCCU_Project\\Views\\DataContent\\DataContentView.cshtml",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\DataContent\\DataContentView.cshtml",
+              "RelativeToolTip": "OCCU_Project\\Views\\DataContent\\DataContentView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T02:11:14.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataContentController.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\DataContentController.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Controllers\\DataContentController.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\DataContentController.cs",
+              "RelativeToolTip": "OCCU_Project\\Controllers\\DataContentController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwD4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T20:57:56.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IDataContentDataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\IDataContentDataProvider.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\DataProviders\\IDataContentDataProvider.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\IDataContentDataProvider.cs",
+              "RelativeToolTip": "OCCU_Project\\DataProviders\\IDataContentDataProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T20:56:39.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataContentDataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\DataContentDataProvider.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\DataProviders\\DataContentDataProvider.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\DataContentDataProvider.cs",
+              "RelativeToolTip": "OCCU_Project\\DataProviders\\DataContentDataProvider.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T19:02:47.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IStatusDataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\IStatusDataProvider.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\DataProviders\\IStatusDataProvider.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\DataProviders\\IStatusDataProvider.cs",
+              "RelativeToolTip": "OCCU_Project\\DataProviders\\IStatusDataProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T23:05:19.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "OCCU_Project\\Controllers\\StatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T23:00:12.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataContentObject.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Models\\DataContentObject.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Models\\DataContentObject.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Models\\DataContentObject.cs",
+              "RelativeToolTip": "OCCU_Project\\Models\\DataContentObject.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T20:04:32.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Program.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Program.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Program.cs",
+              "RelativeToolTip": "OCCU_Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T18:58:54.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OCCU_Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OCCU_Project\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T01:06:50.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetList.cshtml",
+              "DocumentMoniker": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\Status\\GetList.cshtml",
+              "RelativeDocumentMoniker": "OCCU_Project\\Views\\Status\\GetList.cshtml",
+              "ToolTip": "C:\\Users\\elteeb\\source\\repos\\OCCU_Project\\OCCU_Project\\Views\\Status\\GetList.cshtml",
+              "RelativeToolTip": "OCCU_Project\\Views\\Status\\GetList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T00:46:54.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

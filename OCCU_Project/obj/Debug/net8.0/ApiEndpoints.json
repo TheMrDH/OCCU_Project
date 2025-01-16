@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "OCCU_Project.Controllers.DataContentController",
+    "Method": "DataContentView",
+    "RelativePath": "DataContent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "DataContentView"
+  },
+  {
+    "ContainingType": "OCCU_Project.Controllers.DataContentController",
+    "Method": "Create",
+    "RelativePath": "DataContent/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newObject",
+        "Type": "OCCU_Project.Models.DataContentObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OCCU_Project.Controllers.DataContentController",
+    "Method": "Delete",
+    "RelativePath": "DataContent/Delete/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OCCU_Project.Controllers.DataContentController",
+    "Method": "Edit",
+    "RelativePath": "DataContent/Edit/{name}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objectPatch",
+        "Type": "OCCU_Project.Helpers.HashedJsonPatch",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OCCU_Project.Controllers.DataContentController",
+    "Method": "GetList",
+    "RelativePath": "DataContent/GetListSearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "field1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "field2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "field3",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OCCU_Project.Controllers.StatusController",
+    "Method": "GetList",
+    "RelativePath": "Status/getlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

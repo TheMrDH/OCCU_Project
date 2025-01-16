@@ -1,0 +1,91 @@
+﻿@model OCCU_Project.Models.DataContentObject
+
+
+<div class="w-75 bg-white p-5 my-auto">
+    <h4>DataContentObject</h4>
+    <hr />
+    <div class="row">
+        <script>
+            $(document).ready(function () {
+                $("#btn-create-cancel").click(function (event) {
+                    event.preventDefault();
+                    $("#CreateNameError").addClass("d-none");
+                    $("#createPopup").addClass("d-none");
+                    $("#CreateMsg").addClass("d-none");
+                    $("#CreateMsg").text("");
+                });
+
+                $("#btn-create-save").click(function () {
+                    event.preventDefault();
+                
+                    if(!$("#CreateName").val()){
+                      $("#CreateNameError").removeClass("d-none");
+                    }
+                    var newObject = {
+                        "name" :  $("#CreateName").val(),
+                        "field1": $("#CreateField1").val(),
+                        "field2": $("#CreateField2").val(),
+                        "field3": $("#CreateField3").val()
+                    };
+
+                    $.ajax({
+                        context: this,
+                        url: '@Url.Action("Create")',
+                        method: "POST",
+                        data: JSON.stringify(newObject),
+                        contentType: 'application/json',
+                        success: function (data) {
+                            $.ajax({
+                                 context: this,
+                                 url: '@Url.Action("GetListSearch")',
+                                 success: function (data) {
+                                     $("#dataGrid").html(data);
+                                     $("#CreateNameError").addClass("d-none");
+                                     $("#CreateMsg").removeClass("d-none");
+                                      $("#CreateMsg").addClass("text-success");
+                                      $("#CreateMsg").removeClass("text-danger");
+                                     $("#CreateMsg").text("Record Created");
+                                 }
+                                });
+                            },
+                        error:function (data){
+                               $("#CreateMsg").removeClass("d-none");
+                               $("#CreateMsg").removeClass("text-success");
+                               $("#CreateMsg").addClass("text-danger");
+                               $("#CreateMsg").text(data.responseText);
+                           }
+                    });
+                });
+            });
+        </script>
+
+        <div class="col-md-4">
+            <form>
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input id="CreateName"  class="form-control" />
+                    <span id="CreateNameError" class="text-danger d-none">Required Field</span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Field1</label>
+                    <input id="CreateField1"  class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Field2</label>
+                    <input id="CreateField2" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Field3</label>
+                    <input id="CreateField3" class="form-control" />
+                </div>
+                <div>
+                    <span id="CreateMsg" class="d-none"></span>
+                </div>
+                <div class="form-group">
+                    <button id="btn-create-save" class="btn btn-outline-primary">Save</>
+                    <button id="btn-create-cancel" class="btn btn-outline-primary">Cancel</>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

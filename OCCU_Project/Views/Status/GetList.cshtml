@@ -1,0 +1,50 @@
+﻿@model OCCU_Project.Models.StatusList
+
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OCCU_Project.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Status List</title>
+</head>
+<body class="p-3">
+    <h1>Entity Status</h1>
+    <a href="@Url.ActionLink("", "DataContent")">Data Content</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Status)
+            {
+                string rowStyle = item.Status.ToLower().Trim() switch{
+                    "fail" => "bg-danger",
+                    "pass" => "bg-success",
+                    "warn" => "bg-warning"
+                };
+                <tr class="@rowStyle">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>

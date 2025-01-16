@@ -1,0 +1,51 @@
+﻿@model OCCU_Project.Models.DataContentViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OCCU_Project.styles.css" asp-append-version="true" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Data Content</title>
+</head>
+<body class="p-3">
+    <div id="createPopup" class="d-flex bg-black bg-opacity-25 d-none w-100 h-100 position-fixed align-content-center justify-content-center">
+        @await Component.InvokeAsync("Create")
+    </div>
+    <script>
+        $(document).ready(function () {
+                $("#btn-search").click(function () {
+                    $.ajax({
+                        url: '@Url.Action("GetListSearch")',
+                        data: { name: document.getElementById("inp-search").value },
+                        success: function (data) {
+                            $("#dataGrid").html(data);
+                        }
+                    });
+                });
+
+                $("#btn-create").click(function () {
+                    $("#createPopup").removeClass("d-none");
+                });
+            });
+    </script>
+    <a href="@Url.ActionLink("GetList", "Status")">Status List</a>
+    <form>
+        <label id="lb-search" class="control-label">Search</label>
+        <input id="inp-search" type="text" />
+        <button id="btn-search" type="button" class="btn btn-success">Search</button>
+    </form>
+    <button id="btn-create" type="button" class="btn btn-success">Create New Record</button>
+
+
+    <div id="dataGrid">
+    @await Component.InvokeAsync("GetList")
+    </div>
+    
+</body>
+</html>
